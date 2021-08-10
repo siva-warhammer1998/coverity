@@ -25,6 +25,9 @@ public class Resource_leak {
 			try {
 				stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(QUERY1);
+				while(rs.next()) {
+					   System.out.println("name:" + rs.getString("Name"));
+				   }
 			} catch (SQLException e) {
 				
 				e.printStackTrace();
