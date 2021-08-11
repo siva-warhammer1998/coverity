@@ -40,6 +40,7 @@ public class Resource_leak {
 			   Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
 			   Statement stmt = conn.createStatement();
 		       ResultSet rs = stmt.executeQuery(QUERY);
+		       String s = "siva";
 		       
 		       String inputFile = "siva";
 			   BufferedReader br = new BufferedReader(new FileReader(inputFile ));
